@@ -1,0 +1,16 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/ERMPower/EnergyReading.Core/obj
+/ERMPower/EnergyReading.Infrastructure/obj
+/ERMPower/EnergyReading.UnitTests/obj
+/ERMPower/EnergyReading.WebAPI/obj
+/ERMPower/.vs/ERMPower
+/EnergyReading.Core/obj
+/EnergyReading.Infrastructure/obj
+/EnergyReading.UnitTests/obj
+/EnergyReading.WebAPI/obj
+/.vs/ERMPower/v15/Server/sqlite3
+/ConsoleUI/obj
+/.vs/ERMPower/v15
