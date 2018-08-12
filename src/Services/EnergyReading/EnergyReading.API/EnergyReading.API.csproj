@@ -12,9 +12,4 @@
     <PackageReference Include="Microsoft.AspNetCore.App" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\EnergyReading.Core\EnergyReading.Core.csproj" />
-    <ProjectReference Include="..\EnergyReading.Infrastructure\EnergyReading.Infrastructure.csproj" />
-  </ItemGroup>
-
 </Project>

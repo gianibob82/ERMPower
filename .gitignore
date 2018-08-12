@@ -14,3 +14,14 @@
 /.vs/ERMPower/v15/Server/sqlite3
 /ConsoleUI/obj
 /.vs/ERMPower/v15
+/.vs
+/src/ConsoleApp/ERMPower.ConsoleUI/obj
+/src/ConsoleApp/ERMPower.ConsoleUI/bin/Debug/netcoreapp2.1
+/src/Services/EnergyReading/EnergyReading.API/bin/Debug/netcoreapp2.1
+/src/Services/EnergyReading/EnergyReading.API/obj
+/src/Services/EnergyReading/EnergyReading.Core/bin/Debug/netstandard2.0
+/src/Services/EnergyReading/EnergyReading.Core/obj
+/src/Services/EnergyReading/EnergyReading.Infrastructure/bin/Debug/netstandard2.0
+/src/Services/EnergyReading/EnergyReading.Infrastructure/obj
+/src/Services/EnergyReading/EnergyReading.UnitTests/obj
+/src/Services/EnergyReading/EnergyReading.UnitTests/bin/Debug/netcoreapp2.1

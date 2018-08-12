@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 
-namespace EnergyReading.WebAPI
+namespace EnergyReading.API
 {
     public class Program
     {
