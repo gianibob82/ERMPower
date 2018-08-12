@@ -30,8 +30,11 @@ namespace EnergyReading.API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+
+            var csvFilesFolder = Configuration.GetValue<string>("CsvFilesFolderPath");
+
             var webRoot = _env.ContentRootPath;
-            var file = System.IO.Path.Combine(webRoot, "csvfiles");
+            var file = System.IO.Path.Combine(webRoot, csvFilesFolder);
             var repo = new CsvEnergyReadingsRepository(file);
 
             services.AddScoped<IEnergyReadingsRepository>(s => new CsvEnergyReadingsRepository(file));

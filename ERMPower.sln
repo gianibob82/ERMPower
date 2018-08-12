@@ -8,18 +8,21 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{80C91BBD-3C0B-439B-ACF6-39D2845754D2}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EnergyReading", "EnergyReading", "{365BFB75-1F1A-4C44-ABC6-89E14A25E4A5}"
+	ProjectSection(SolutionItems) = preProject
+		readme.txt = readme.txt
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnergyReading.Core", "src\Services\EnergyReading\EnergyReading.Core\EnergyReading.Core.csproj", "{8560FE28-6ED7-45F3-B279-90EAF50A1FF5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EnergyReading.Core", "src\Services\EnergyReading\EnergyReading.Core\EnergyReading.Core.csproj", "{8560FE28-6ED7-45F3-B279-90EAF50A1FF5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnergyReading.Infrastructure", "src\Services\EnergyReading\EnergyReading.Infrastructure\EnergyReading.Infrastructure.csproj", "{72127284-FB65-4F8A-AC40-63E528F0DFAE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EnergyReading.Infrastructure", "src\Services\EnergyReading\EnergyReading.Infrastructure\EnergyReading.Infrastructure.csproj", "{72127284-FB65-4F8A-AC40-63E528F0DFAE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnergyReading.UnitTests", "src\Services\EnergyReading\EnergyReading.UnitTests\EnergyReading.UnitTests.csproj", "{14D643CC-6A35-4120-82F1-B91B09D3E6F4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EnergyReading.UnitTests", "src\Services\EnergyReading\EnergyReading.UnitTests\EnergyReading.UnitTests.csproj", "{14D643CC-6A35-4120-82F1-B91B09D3E6F4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnergyReading.API", "src\Services\EnergyReading\EnergyReading.API\EnergyReading.API.csproj", "{2D38F8A9-6B30-409C-B881-E957C4141E76}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EnergyReading.API", "src\Services\EnergyReading\EnergyReading.API\EnergyReading.API.csproj", "{2D38F8A9-6B30-409C-B881-E957C4141E76}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ConsoleApp", "ConsoleApp", "{C33B5119-054C-4606-BF7D-7365A0FBF8C3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ERMPower.ConsoleUI", "src\ConsoleApp\ERMPower.ConsoleUI\ERMPower.ConsoleUI.csproj", "{FF138D4B-7DB8-40B7-AA2B-4BE032E6AD25}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ERMPower.ConsoleUI", "src\ConsoleApp\ERMPower.ConsoleUI\ERMPower.ConsoleUI.csproj", "{FF138D4B-7DB8-40B7-AA2B-4BE032E6AD25}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

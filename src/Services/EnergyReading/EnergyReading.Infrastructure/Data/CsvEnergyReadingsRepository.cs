@@ -34,7 +34,7 @@ namespace EnergyReading.Infrastructure.Data
         private IEnumerable<IEnergyReading> ReadFromFiles(string pathToFolder)
         {
             if (string.IsNullOrEmpty(pathToFolder))
-                throw new ArgumentNullException("Path to folder is invalid");
+                throw new ArgumentNullException("Path to folder is missing");
 
             var files = Directory.GetFiles(pathToFolder, "*.csv");
             if (files.Count() <= 0)

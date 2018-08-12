@@ -21,7 +21,7 @@ namespace EnergyReading.API.Application
                 yield return new EnergyReadingGroup {
                      name = g.Name,
                       medianvalue = g.MedianValue(),
-                       readings = g.FindDivergentData(percValue).Select(r => new EnergyReading { date = r.DateTime, value = r.UsageValue })
+                       readings = g.FindMedianDivergentData(percValue).Select(r => new EnergyReading { date = r.DateTime, value = r.UsageValue })
                 };
             }
 

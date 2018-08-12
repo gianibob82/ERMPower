@@ -15,7 +15,7 @@ namespace EnergyReading.Core.EnergyReadingAggregate
             return Records.Select(r => r.UsageValue).Median();
         }
 
-        public IEnumerable<IEnergyReading> FindDivergentData(byte percVariance)
+        public IEnumerable<IEnergyReading> FindMedianDivergentData(byte percVariance)
         {
             if (percVariance < 1 || percVariance > 100)
                 throw new ArgumentOutOfRangeException("Values 1 to 100 only.");

@@ -30,10 +30,10 @@ namespace EnergyReading.UnitTests
             Assert.IsNotNull(touRecords);
 
             // exclude 5 and 6 numbers
-            var divData = touRecords.FindDivergentData(20);
+            var divData = touRecords.FindMedianDivergentData(20);
             Assert.AreEqual(8, divData.Count());
 
-            // i've excluded the correct numbers
+            // have I excluded the correct numbers
             var foundExcludedNumbers = divData.Any(d => d.UsageValue == 5 || d.UsageValue == 6);
 
             Assert.IsFalse(foundExcludedNumbers);
