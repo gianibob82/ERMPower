@@ -9,3 +9,6 @@ EnergyReading API doesn't expose documentation (like with Swagger) because not r
 ## Csv files error handling
 I assume CSV files used as datasource are correct and follow the same structure as provided.
 
+## How to run it
+You can run the project without having to deploy API to webserver. Launch VS having API project as main project.
+Build the console app and run the ps1 command
