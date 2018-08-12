@@ -29,18 +29,5 @@ namespace EnergyReading.Core.EnergyReadingAggregate
 
             return Records.Where(r => r.UsageValue > topMedian || r.UsageValue < lowMedian);
         }
-
-        public StringBuilder PrintDivergentData(byte percVariance)
-        {
-            var sb = new StringBuilder();
-            var median = MedianValue();
-
-            foreach (var d in FindDivergentData(percVariance))
-            {
-                sb.AppendLine($"{this.Name} {d.DateTime} {d.UsageValue} {median}");
-            }
-
-            return sb;
-        }
     }
 }

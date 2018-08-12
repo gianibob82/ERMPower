@@ -22,9 +22,4 @@ namespace EnergyReading.API.Application
         public DateTime date { get; set; }
         public decimal value { get; set; }
     }
-
-    public class EnergyReadingGroupQueryParams
-    {
-
-    }
 }

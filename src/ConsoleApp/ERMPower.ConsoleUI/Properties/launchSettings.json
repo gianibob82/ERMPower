@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "ERMPower.ConsoleUI": {
+      "commandName": "Project",
+      "commandLineArgs": "http://localhost:55051 20"
+    }
+  }
+}
