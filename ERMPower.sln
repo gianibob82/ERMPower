@@ -8,9 +8,6 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{80C91BBD-3C0B-439B-ACF6-39D2845754D2}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EnergyReading", "EnergyReading", "{365BFB75-1F1A-4C44-ABC6-89E14A25E4A5}"
-	ProjectSection(SolutionItems) = preProject
-		readme.txt = readme.txt
-	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EnergyReading.Core", "src\Services\EnergyReading\EnergyReading.Core\EnergyReading.Core.csproj", "{8560FE28-6ED7-45F3-B279-90EAF50A1FF5}"
 EndProject

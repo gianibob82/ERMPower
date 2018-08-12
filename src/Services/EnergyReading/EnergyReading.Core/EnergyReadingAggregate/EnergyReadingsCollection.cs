@@ -10,11 +10,20 @@ namespace EnergyReading.Core.EnergyReadingAggregate
         public string Name { get; set; }
         public IEnumerable<IEnergyReading> Records { get; set; }
 
+        /// <summary>
+        /// Find the median value in this group
+        /// </summary>
+        /// <returns></returns>
         public decimal MedianValue()
         {
             return Records.Select(r => r.UsageValue).Median();
         }
 
+        /// <summary>
+        /// Find records that are above or below this group median value
+        /// </summary>
+        /// <param name="percVariance">Divergence expressed with % value</param>
+        /// <returns></returns>
         public IEnumerable<IEnergyReading> FindMedianDivergentData(byte percVariance)
         {
             if (percVariance < 1 || percVariance > 100)

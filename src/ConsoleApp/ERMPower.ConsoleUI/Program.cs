@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Threading.Tasks;
@@ -49,16 +50,23 @@ namespace ERMPower.ConsoleUI
 
                 var deserializedResponse = JsonConvert.DeserializeObject<IEnumerable<EnergyReadingGroup>>(serializedResponse);
 
+                int totalItems = 0;
+
                 foreach (var g in deserializedResponse)
+                {
+                    totalItems += g.readings.Count();
+
                     foreach (var r in g.readings)
                         Console.WriteLine($"{g.name} {r.date} {r.value} {g.medianvalue}");
+                }
+
+                Console.WriteLine($"Found {totalItems} readings");
             }
             else {
                 var reason = await response.Content.ReadAsStringAsync();
                 Console.WriteLine($"Error:{response.StatusCode} {reason}");
             }
         }
-
     }
 
     public class EnergyReadingGroup

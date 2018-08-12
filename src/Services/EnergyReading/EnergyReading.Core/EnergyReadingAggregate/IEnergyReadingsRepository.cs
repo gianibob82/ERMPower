@@ -9,7 +9,5 @@ namespace EnergyReading.Core.EnergyReadingAggregate
         IEnumerable<IEnergyReading> List();
 
         IEnumerable<EnergyReadingsCollection> GroupByCollection();
-
-        IEnumerable<IEnergyReading> GetByCollectionId(string collectionId);
     }
 }

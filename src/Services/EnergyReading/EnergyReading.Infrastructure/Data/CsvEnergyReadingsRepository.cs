@@ -21,12 +21,7 @@ namespace EnergyReading.Infrastructure.Data
         {
             return _context;
         }
-
-        public IEnumerable<IEnergyReading> GetByCollectionId(string collectionId)
-        {
-            return _context.ToList().Where(e => e.CollectionId == collectionId);
-        }
-
+        
         public IEnumerable<EnergyReadingsCollection> GroupByCollection()
         {
             return _context.GroupBy(g => g.CollectionId).Select(g => new EnergyReadingsCollection { Name = g.Key, Records = g.AsEnumerable() });
@@ -66,6 +61,7 @@ namespace EnergyReading.Infrastructure.Data
             }
         }
 
+        // I have included only the necessary fields for this test
         private LPEnergyReading CreateLPEnergyData(CsvReader csv, string documentId)
         {
             return new LPEnergyReading
